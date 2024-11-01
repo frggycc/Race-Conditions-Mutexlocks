@@ -1,6 +1,12 @@
-/*
-* Stack containing race conditions
-*/
+
+/*******************************
+* CPSC351: Group Assignment #3
+* Members: 
+* 	Charlie Cardenas
+* 	Chaitanya Talluri
+* 	Ansh Tomar
+* 	Hunter Tran
+********************************/
 
 #include <stdio.h>
 #include <stdlib.h>
