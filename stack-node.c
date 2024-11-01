@@ -52,7 +52,7 @@ int main(void)
 void push(value_t v, StackNode **top)
 {
     // Thread holds onto shared stack
-    // pthread_mutex_lock(&lock);
+    pthread_mutex_lock(&lock);
 
     StackNode * new_node = malloc(sizeof(StackNode));
 
@@ -61,13 +61,13 @@ void push(value_t v, StackNode **top)
     *top           = new_node;
 
     // Thread releases shared stack
-    // pthread_mutex_unlock(&lock);
+    pthread_mutex_unlock(&lock);
 }
 
 value_t pop(StackNode **top)
 {
     // Thread holds onto shared stack
-    // pthread_mutex_lock(&lock);
+    pthread_mutex_lock(&lock);
 
     if (is_empty(*top)) return (value_t)0;
 
@@ -80,7 +80,7 @@ value_t pop(StackNode **top)
     free(temp);
 
     // Thread releases shared stack
-    // pthread_mutex_unlock(&lock);
+    pthread_mutex_unlock(&lock);
 
     return data;
 }

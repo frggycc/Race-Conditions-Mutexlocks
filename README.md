@@ -6,6 +6,11 @@ The task was to create 200 thread workers that would all modify the same stack, 
 
 Below are some of the errors that was ran into:
 
+<<<<<<< HEAD
+=======
+Below are some of the errors I ran into:
+
+>>>>>>> 847984e5d834d3741b3e5120afedb4edd65cb7ff
 ![Screenshot from 2024-10-31 16-40-08](https://github.com/user-attachments/assets/fd8a8b18-e00e-4ec2-b414-d6543ab6bbf7)
 
 ## Solution
